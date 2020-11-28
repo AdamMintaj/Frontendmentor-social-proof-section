@@ -3,7 +3,6 @@ body
 	background-image: url("bg-pattern-top-desktop.svg"), url("bg-pattern-bottom-desktop.svg");
 	background-repeat: no-repeat;
 	background-position: left top, right bottom;
-	height: 100vh;
 	max-width: 100%;
 	font-size: 15px;
 	font-family: "Spartan";
@@ -11,8 +10,8 @@ body
 
 main
 {
-	margin-left: 165px;
-	margin-right: 165px;
+	margin-left: 11.8%;
+	margin-right: 11.8%;
 	color: #541f53;
 }
 
@@ -153,5 +152,166 @@ footer
 {
 	text-align: center;
 	margin-top: 50px;
+	margin-left: 11.8%;
+	margin-right: 11.8%;
 	font-size: 11px;
+}
+
+@media only screen and (max-width: 375px)
+{
+	body
+	{
+		background-image: url("bg-pattern-top-mobile.svg"), url("bg-pattern-bottom-mobile.svg");
+		margin-top: 75px;
+	}
+
+	main
+	{
+		margin-left: 8%;
+		margin-right: 8%;
+	}
+
+	section
+	{
+		display: block;
+		margin-top: 0;
+	}
+
+		section > div
+	{
+		flex-basis: 50%;
+	}
+
+	#info
+	{
+		padding: 0;
+		text-align: center;
+	}
+
+	h1
+	{
+		font-size: 30px;
+		padding: 0;
+	}
+
+	p
+	{
+		line-height: 2;
+		font-size: 12px;
+	}
+
+	#ratings
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#ratings > :first-child
+	{
+		position: static;
+	}
+
+	#ratings > :nth-child(2)
+	{
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+
+	#ratings > :nth-child(3)
+	{
+		position: static;
+	}
+
+	.rating
+	{
+		background-color: #f7f2f8;
+		border-radius: 10px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center; 
+	}
+
+	.rating > h5
+	{
+		margin: 10px;
+		display: block;
+	}
+
+	.stars
+	{
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 10px;
+	}
+
+	.rev
+	{
+		background-color: #541f53;
+		border-radius: 10px;
+		color: white;
+	}
+
+	#revs > :first-child
+	{
+		position:static;
+	}
+
+	#revs > :nth-child(2)
+	{
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	#revs > :nth-child(3)
+	{
+		position: static;
+	}
+
+	.rev_content
+	{
+		padding: 25px 0;
+		margin-top: 25px;
+	}
+
+	.rev_content > p
+	{
+		font-size: 12px;
+	}
+
+	.label
+	{
+		display: flex;
+		align-items: center;
+	}
+
+	.label > img
+	{
+		border-radius: 50px;
+		height: 45px;
+		margin-right: 25px;
+	}
+
+	.name_tag > p
+	{
+		color: #c477ab;
+		font-size: 13px;
+		margin:0;
+	}
+
+	.name_tag > h5
+	{
+		margin: 0;
+	}
+
+	footer
+	{
+		text-align: center;
+		margin-top: 25px;
+		margin-left: 11.8%;
+		margin-right: 11.8%;
+		font-size: 11px;
+	}
 }
